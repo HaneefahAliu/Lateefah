@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="flex-upload" style="display: flex;  justify-content: space-between;">
+            <div>
+                <form id="projectForm">
+                    Product Image:<br>
+                    <input type="file" name="projectimage" id="projectImage">
+                    <br><br>
+
+                    Product Title:<br>
+                    <input type="text" name="projecttitle" id="projectTitle">
+                    <br><br>
+
+                    Product Description:<br>
+                    <textarea name="projectdesc" id="projectDesc" rows="4" cols="50"></textarea>
+                    <br><br>
+
+                    Roles:<br>
+                    <input type="text" name="role" id="role">
+                    <br><br>
+
+                    Tools:<br>
+                    <input type="text" name="tool" id="tool">
+                    <br><br>
+
+                    Product category:<br>
+                    <select name="category" id="projectCategory">
+                        <option value="productDesign">product design</option>
+                        <option value="me">me</option>
+                        <option value="3d">3d</option>
+                        <option value="illustration">illustration</option>
+                        <option value="motion">motion</option>
+                        <option value="shop">shop</option>
+                    </select>
+                    <br><br>
+
+                    Detail category:<br>
+                    <select name="category" id="detailCategory">
+                        <option value="Cancer care">Cancer care</option>
+                        <option value="Homely">Homely</option>
+                        <option value="Gameboard">Gameboard</option>
+                        <option value="Audi">Audi</option>
+                        <option value="Iron man">Iron man</option>
+                        <option value="Room">Room</option>
+                        <option value="Juicebox">Juicebox</option>
+                        <option value="Park">Park</option>
+                        <option value="Swipe">Swipe</option>
+                        <option value="Superfriendly">Superfriendly</option>
+                        <option value="Bankit">Bankit</option>
+                        <option value="Swipenest">Swipenest</option>
+                        <option value="Motion">Motion</option>
+                    </select>
+                    <br><br>
+
+                    <button>
+                        Save
+                    </button>
+                </form>
+            </div>
+
+            <div>
+                <form id="motionForm">
+                    Product Image:<br>
+                    <input type="file" name="detailImage" id="detailImage" multiple="multiple">
+                    <br><br>
+
+                    Product category:<br>
+                    <select name="category" id="imageCategory">
+                        <option value="Audi">Audi</option>
+                        <option value="Iron man">Iron man</option>
+                        <option value="Room">Room</option>
+                        <option value="Juicebox">Juicebox</option>
+                        <option value="Park">Park</option>
+                        <option value="Swipe">Swipe</option>
+                        <option value="Superfriendly">Superfriendly</option>
+                        <option value="Bankit">Bankit</option>
+                        <option value="Swipenest">Swipenest</option>
+                        <option value="Motion">Motion</option>
+                    </select>
+                    <br><br>
+                    <button>
+                        Upload
+                    </button>
+                </form>
+            </div>
+            <div>
+                <form id="shopForm">
+                    Shop Image:<br>
+                    <input type="file" name="shopimage" id="shopImage">
+                    <br><br>
+
+                    Shop Title:<br>
+                    <input type="text" name="shoptitle" id="shopTitle">
+                    <br><br>
+
+                    Shop Price:<br>
+                    <input type="text" name="shopprice" id="shopPrice">
+                    <br><br>
+                    <button>
+                        Upload
+                    </button>
+                </form>
+            </div>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+        <script src="js/firebase.js"></script>
+        <script src="js/detail.js"></script>
+        <script src="js/shop.js"></script>
+    </body>
+</html>
