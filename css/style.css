@@ -95,17 +95,15 @@ hr {
     padding-top: 70px;
 }
 
-.work img {
+ .work img {
     opacity: 1;
-    width: 300px;
-    height: 200px;
-    background-color: #fff;
+    background-color: #fff; 
 }
 
 .work a {
     text-decoration: none;
     color: #fff;
-    text-align: center;
+    /* text-align: center; */
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 14px;
@@ -118,9 +116,14 @@ hr {
     font-family: 'Roboto', sans-serif;
 }
 
-.bottom p {
-    max-width: 280px;
+.bottom .text {
+    font-size: 24px;
     line-height: 1.5;
+    text-decoration: none;
+}
+
+.bottom i  {
+    padding-left: 15px;
 }
 
 .bottom a {
@@ -138,11 +141,13 @@ hr {
 
 .projectCard h6 {
     font-size: 14px;
+    max-width: 400px;
+    line-height: 1.6;
 }
 
 .projectCard p {
     font-size: 16px;
-    max-width: 600px;
+    max-width: 400px;
     line-height: 1.6;
 }
 
@@ -155,10 +160,6 @@ hr {
     width: 500px;
     position: absolute;
     right:100px;
-}
-
-.motion img {
-    width: 140px !important;
 }
 
 .detailProject {
@@ -182,14 +183,18 @@ h3.detailName {
 }
 
 .me-flex img {
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
     margin-right: 50px;
 }
 
+.me-flex h3 {
+    font-size: 28px;
+}
+
 .me-flex p {
-    font-size: 15px;
-    line-height: 1.7;
+    font-size: 18px;
+    line-height: 1.3;
 }
 
 .me-flex ul li {
@@ -221,13 +226,15 @@ h3.detailName {
 
 .project-detail h1 {
     text-align: center;
-    font-size: 24px;
-    text-decoration: underline;
+    font-size: 26px;
+    text-decoration: 0.5px solid underline;
+    text-underline-offset: 10px;
 }
 
 .project-detail h2 {
-    font-size: 20px;
-    text-decoration: underline;
+    font-size: 22px;
+    text-decoration: 0.5px solid underline;
+    text-underline-offset: 10px;
 }
 
 .project-detail h3 {
@@ -247,17 +254,27 @@ h3.detailName {
 }
 
 .project-detail h6 {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 
 .project-detail p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 2;
+}
+
+.project-detail span.number {
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 10px;
+    font-size: 44px;
 }
 
 .project-detail img {
     width: 400px;
+}
+
+.project-detail video {
+    width: 200px;
 }
 
 .product-design p {
@@ -265,11 +282,14 @@ h3.detailName {
 }
 
 .img-ctn img {
-    width: 400px;
+    width:200px;
+    height: 200px;
 }
 
 .text-ctn p {
-    max-width: 400px;
+    max-width: 300px;
+    font-size: 14px;
+    line-height: 1.6;
 }
 
 .center {
@@ -296,10 +316,12 @@ h3.detailName {
 
 .flex h4 {
     font-size: 22px;
+    font-weight: bolder;
+    max-width: 250px;
 }
 .flex p {
     max-width: 300px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .flex img {
@@ -355,7 +377,7 @@ ol li {
 .shopCard p {
     color: #8F8F8F;
     font-weight: 100;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .shopCard h6 {
@@ -387,3 +409,39 @@ ol li {
       font-weight: 100;
       font-style: italic;
   }
+
+.homely div {
+    padding-bottom: 50px;
+  }
+
+  .homely p {
+    max-width: 800px;
+  }
+
+.homely-web video {
+    width: 900px;
+    align-self: center;
+}
+
+.flex-motion {
+    display: flex;
+    padding-bottom: 50px;
+    /* justify-content: space-between; */
+}
+
+ 
+.swipe-gif img {
+    width: 180px;
+    margin-right: 50px;
+}
+
+.video video {
+    width: 180px;
+    margin-right: 40px;
+}
+
+.motion h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
